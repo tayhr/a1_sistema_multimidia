@@ -10,40 +10,48 @@
 </head>
 
 <body onload="loader()">
-    <h1>Informações recebidas</h1>
-    <h2>Seus dados</h2>
-    <h3>Seu nome</h3>
-    <input type="text" disabled value="" id="nome">
-    <h4>Sua data de Nascimento</h4>
-    <input type="text" disabled id="dataNas">
-    <h3>CEP</h3>
-    <input type="text" disabled id="cep">
-    <h3>RUA</h3>
-    <input type="text" disabled id="rua">
-    <h4>Numero</h4>
-    <input type="text" disabled id="num">
-    <h5>Sua pagina</h5>
-    <iframe src="" frameborder="0"></iframe>
-    <h6>sua Imagem</h6>
-    <img src="" id="imagem" alt="">
-    <h6>Seu video</h6>
-    <!-- <video src=""></video> -->
-
+    <div class="row">
+        <fieldset>
+            <legend>
+                <h2> Retorno dados</h2>
+            </legend>
+            <label for="name">Nome</label>
+            <input type="text" disabled name="nome" id="nome" placeholder="Digite seu nome completo">
+            <div class="row">
+                <label for="dataNas">Data de Nascimento</label>
+                <input type="text" disabled name="dataNas" id="dataNas" placeholder="Digite sua data de nascimento">
+            </div>
+            <fieldset>
+                <legend>
+                    <h3>Retorno Endereço</h3>
+                </legend>
+                <div class="row">
+                    <label for="cep">Cep</label>
+                    <input type="text" disabled name="cep" id="cep" placeholder="Digite seu CEP">
+                </div>
+                <div class="row">
+                    <label for="rua">Rua</label>
+                    <input type="text" disabled name="rua" id="rua" placeholder="Digite o nome da rua">
+                </div>
+                <div class="row">
+                    <label for="num">Número</label>
+                    <input type="number" disabled name="num" id="num" placeholder="Digite o numero da casa">
+                </div>
+            </fieldset>
+        </fieldset>
+    </div>
     </form>
 
     <script>
         var loader = function () {
             var array = [];
             array = getAllUrlParams(location.href);
-            console.log(array)
-            // document.getElementById("").value;
+            // console.log(new Date(array.datanas));
             document.getElementById("nome").value = array.nome;
-            document.getElementById("dataNas").value= array.dataNas;
-            document.getElementById("cep").value= array.cep;
-            document.getElementById("rua").value= array.rua;
-            document.getElementById("num").value= array.num;
-            document.getElementById("imagem").src = array.imagem;
-
+            document.getElementById("dataNas").value = array.datanas;
+            document.getElementById("cep").value = array.cep;
+            document.getElementById("rua").value = array.rua;
+            document.getElementById("num").value = array.num;
         }
 
         function getAllUrlParams(url) {
