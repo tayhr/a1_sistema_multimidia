@@ -2,19 +2,19 @@
 Trabalho A1 sistema multimidia
 
 
-felippe - tela 2
-coletar url (acesso a site)
-coletar um link de uma imagem
-coletar um link de um video
+felippe - tela 2<br>
+coletar url (acesso a site)<br>
+coletar um link de uma imagem<br>
+coletar um link de um video<br>
+<br>
+<br>
+patrick - tela 1<br>
+coletar nome<br>
+coletar cpf<br>
+coletar cep<br>
+coletar data de nascimento<br>
+senha de acesso<br>
 
 
-patrick - tela 1
-coletar nome
-coletar cpf
-coletar cep
-coletar data de nascimento
-senha de acesso
-
-
-Alex - tela 3
+Alex - tela 3<br>
 Resultado de tudo
