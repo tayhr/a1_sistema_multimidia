@@ -9,11 +9,41 @@
 </head>
 
 <body>
-    <form action="/resultado.html" method="get">
+
+
+    <form action="resultado.html" method="get">
         <h1>Titulo</h1>
+
+
         <div class="row">
-            <label for="name">Digite seu nome</label>
-            <input type="text" name="nome" placeholder="Digite seu nome">
+            <fieldset>
+                <legend>
+                    <h2> Cadastro do Usuario</h2>
+                </legend>
+                <label for="name">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo">
+                <div class="row">
+                    <label for="dataNas">Data de Nascimento</label>
+                    <input type="date" name="dataNas" placeholder="Digite sua data de nascimento">
+                </div>
+                <fieldset>
+                    <legend>
+                        <h3>Cadastrar Endereço</h3>
+                    </legend>
+                    <div class="row">
+                        <label for="cep">Cep</label>
+                        <input type="text" name="" placeholder="Digite seu CEP">
+                    </div>
+                    <div class="row">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" placeholder="Digite o nome da rua">
+                    </div>
+                    <div class="row">
+                        <label for="num">Número</label>
+                        <input type="number" name="num" placeholder="Digite o numero da casa">
+                    </div>
+                </fieldset>
+            </fieldset>
         </div>
         <div class="row">
             <label for="name">Digite o link de uma página</label>
